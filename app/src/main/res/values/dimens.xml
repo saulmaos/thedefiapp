@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_extra_small">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_for_logo_inside_circle">10dp</dimen>
+    <dimen name="icon_size_wrapped">45dp</dimen>
+    <dimen name="icon_size_normal">40dp</dimen>
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_extra_small">16dp</dimen>
+    <dimen name="bottom_separator_thickness">1dp</dimen>
+</resources>

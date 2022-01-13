@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">The Defi App</string>
+
+    <string name="btn_add_address">Add Address</string>
+    <string name="on_boarding_title">Your DeFi portfolio</string>
+    <string name="on_boarding_msg">Add an ETH/BSC/xDai/MATIC/FTM/OKT/HECO/AVAX/Arbitrum address to start tracking all your activity across blockchains</string>
+    <string name="field_enter_address">Enter address</string>
+    <string name="error_address_empty">Address cannot be empty</string>
+    <string name="title_portfolio_total_balance">Total Balance</string>
+    <string name="title_blockchains">Blockchains</string>
+    <string name="title_overview">Overview</string>
+    <string name="title_protocols">Protocols</string>
+    <string name="title_overview_wallet">Wallet</string>
+    <string name="title_overview_liquidity">Liquidity</string>
+    <string name="title_overview_yield">Yield</string>
+    <string name="title_overview_lending">Lending</string>
+    <string name="title_overview_farming">Farming</string>
+    <string name="title_overview_deposits">Deposits</string>
+    <string name="title_overview_staked">Staked</string>
+    <string name="title_overview_insurance">Insurance</string>
+    <string name="title_overview_locked">Locked</string>
+    <string name="title_overview_rewards">Rewards</string>
+    <string name="portfolio_daily_earnings">+$%s</string>
+    <string name="error_bad_address_title">An error occurred</string>
+    <string name="error_bad_address_msg">It looks like the address %s is wrong.\nPlease try another</string>
+    <string name="error_bad_address_btn">Change address</string>
+    <string name="error_request_failed_title">An error occurred while making the request</string>
+    <string name="error_request_failed_msg">If the error persists, please contact us</string>
+    <string name="error_request_failed_btn">Try again</string>
+    <string name="fiat_price">$%s</string>
+    <string name="number_percentage">%s%%</string>
+    <string name="token_price">\@$%s</string>
+    <string name="token_amount">%s %s</string>
+    <string name="protocol_pool">Pool</string>
+    <string name="protocol_staked">Staked</string>
+    <string name="protocol_rewards_apr">Rewards/APR</string>
+    <string name="protocol_staked_value">Value</string>
+    <string name="price_in_parenthesis">($%s)</string>
+    <string name="lending_health_rate">Health rate: %s</string>
+    <string name="lending_supplied">Supplied</string>
+    <string name="lending_balance">Balance</string>
+    <string name="lending_apr_and_farm_apr">APR-Farm APR</string>
+    <string name="lending_value">Value</string>
+    <string name="lending_borrowed">Borrowed</string>
+    <string name="two_number_percentage">%s%%-%s%%</string>
 </resources>
