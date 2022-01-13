@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.drawscope.clipRect
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
@@ -18,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.thedefiapp.R
 
 @Composable
-fun CryptoLoading(height: Dp = 100.dp) {
+fun CryptoLoading(height: Dp = dimensionResource(id = R.dimen.default_eth_loading_animation_size)) {
     val image = ImageBitmap.imageResource(id = R.drawable.eth_logo)
     val color = MaterialTheme.colors.primary
     val yAnim = rememberInfiniteTransition()

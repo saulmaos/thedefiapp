@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="padding_extra_extra_small">2dp</dimen>
     <dimen name="padding_extra_small">4dp</dimen>
     <dimen name="padding_small">8dp</dimen>
     <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_big">24dp</dimen>
+
     <dimen name="padding_for_logo_inside_circle">10dp</dimen>
+
     <dimen name="icon_size_wrapped">45dp</dimen>
     <dimen name="icon_size_normal">40dp</dimen>
     <dimen name="icon_size_small">20dp</dimen>
     <dimen name="icon_size_extra_small">16dp</dimen>
+
     <dimen name="bottom_separator_thickness">1dp</dimen>
+
+    <dimen name="extra_extra_small_rounded_corner">2dp</dimen>
+
+    <dimen name="default_pull_to_refresh_height">50dp</dimen>
+    <dimen name="default_eth_loading_animation_size">100dp</dimen>
 </resources>

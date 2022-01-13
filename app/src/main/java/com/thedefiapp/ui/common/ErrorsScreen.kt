@@ -7,6 +7,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -37,13 +38,13 @@ fun ErrorCompose(title: String, msg: String, btnText: String, btnAction: () -> U
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_normal))
         ) {
             Text(text = title, style = MaterialTheme.typography.h6)
             Text(
                 text = msg, textAlign = TextAlign.Center
             )
-            Spacer(modifier = Modifier.padding(top = 16.dp))
+            Spacer(modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_normal)))
             Button(onClick = { btnAction() }) {
                 Text(text = btnText)
             }

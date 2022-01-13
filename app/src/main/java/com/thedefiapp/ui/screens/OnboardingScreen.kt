@@ -9,10 +9,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.thedefiapp.R
 import com.thedefiapp.ui.theme.TheDefiAppTheme
 import com.thedefiapp.utils.EMPTY_STRING
@@ -35,14 +35,14 @@ fun OnBoardingScreen(
         keyboardController?.hide()
         onAddAddressPressed(text)
     }
-    Column(modifier = Modifier.padding(16.dp)) {
+    Column(modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_normal))) {
         Text(
             text = stringResource(id = R.string.on_boarding_title),
             style = MaterialTheme.typography.h4
         )
-        Spacer(modifier = Modifier.padding(top = 8.dp))
+        Spacer(modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_small)))
         Text(text = stringResource(id = R.string.on_boarding_msg))
-        Spacer(modifier = Modifier.padding(top = 8.dp))
+        Spacer(modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_small)))
         OutlinedTextField(
             value = text,
             isError = textError.isNotEmpty(),
@@ -63,7 +63,7 @@ fun OnBoardingScreen(
                 onSummit()
             })
         )
-        Spacer(modifier = Modifier.padding(top = 24.dp))
+        Spacer(modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_big)))
         Row(
             horizontalArrangement = Arrangement.End,
             verticalAlignment = Alignment.CenterVertically,
@@ -76,10 +76,10 @@ fun OnBoardingScreen(
                 Icon(
                     imageVector = FontAwesomeIcons.Solid.Paste,
                     contentDescription = EMPTY_STRING,
-                    modifier = Modifier.size(16.dp)
+                    modifier = Modifier.size(dimensionResource(id = R.dimen.icon_size_extra_small))
                 )
             }
-            Spacer(modifier = Modifier.padding(end = 24.dp))
+            Spacer(modifier = Modifier.padding(end = dimensionResource(id = R.dimen.padding_big)))
             Button(
                 onClick = onSummit,
                 enabled = text.isNotBlank(),

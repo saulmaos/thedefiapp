@@ -3,7 +3,8 @@ package com.thedefiapp.ui.common
 import androidx.compose.foundation.layout.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.dimensionResource
+import com.thedefiapp.R
 import com.thedefiapp.data.models.OverViewBalance
 import kotlin.math.ceil
 
@@ -28,7 +29,7 @@ fun FixedGrid(
                             content(items[index])
                         }
                         if (j != columns - 1) {
-                            Spacer(modifier = Modifier.padding(end = 16.dp))
+                            Spacer(modifier = Modifier.padding(end = dimensionResource(id = R.dimen.padding_normal)))
                         }
                     } else {
                         Spacer(Modifier.weight(1f, fill = true))
@@ -36,7 +37,7 @@ fun FixedGrid(
                     index++
                 }
             }
-            Spacer(modifier = Modifier.padding(top = 8.dp))
+            Spacer(modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_small)))
         }
     }
 }

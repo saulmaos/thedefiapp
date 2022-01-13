@@ -11,7 +11,8 @@ import androidx.compose.material.contentColorFor
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.dimensionResource
+import com.thedefiapp.R
 
 @Composable
 fun TagList(texts: List<String>) {
@@ -19,7 +20,7 @@ fun TagList(texts: List<String>) {
         texts.forEachIndexed { index, it ->
             Tag(text = it)
             if (index != texts.lastIndex)
-                Spacer(modifier = Modifier.padding(start = 4.dp))
+                Spacer(modifier = Modifier.padding(start = dimensionResource(id = R.dimen.padding_extra_small)))
         }
     }
 }
@@ -31,8 +32,11 @@ fun Tag(text: String, modifier: Modifier = Modifier) {
         color = contentColorFor(backgroundColor = MaterialTheme.colors.secondary),
         style = MaterialTheme.typography.caption,
         modifier = modifier
-            .clip(RoundedCornerShape(2.dp))
+            .clip(RoundedCornerShape(dimensionResource(id = R.dimen.extra_extra_small_rounded_corner)))
             .background(MaterialTheme.colors.secondary)
-            .padding(start = 2.dp, end = 2.dp)
+            .padding(
+                start = dimensionResource(id = R.dimen.extra_extra_small_rounded_corner),
+                end = dimensionResource(id = R.dimen.extra_extra_small_rounded_corner)
+            )
     )
 }

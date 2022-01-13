@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.drawscope.clipRect
 import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
 import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.unit.*
 import com.thedefiapp.R
@@ -28,7 +29,7 @@ import kotlin.math.roundToInt
 @Composable
 fun PullToRefresh(
     isRefreshing: Boolean = false,
-    height: Dp = 50.dp,
+    height: Dp = dimensionResource(id = R.dimen.default_pull_to_refresh_height),
     onRefresh: () -> Unit,
     scrollableContent: @Composable () -> Unit
 ) {
