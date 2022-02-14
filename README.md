@@ -24,7 +24,7 @@ The first time you run the app it will ask for an ETH Address, you can use below
 ```sh
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) [2022] [@saulmaos]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
