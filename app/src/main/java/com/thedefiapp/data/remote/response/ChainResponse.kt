@@ -9,7 +9,7 @@ data class ChainResponse(
     val id: String,
     @Expose
     @SerializedName("community_id")
-    val communityId: Int,
+    val communityId: Long = 0,
     @Expose
     @SerializedName("name")
     val name: String,
